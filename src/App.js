@@ -8,7 +8,7 @@ const App = () => {
 
   const fetchTrainingData = async () => {
     try {
-      const trainingApiUrl = process.env.REACT_APP_TRAINING_API_URL || 'http://localhost:8080/api/Training';
+      const trainingApiUrl = process.env.REACT_APP_TRAINING_API_URL || 'https://guryongpofs.onrender.com/api/Training';
       const response = await fetch(trainingApiUrl);
 
       if (!response.ok) {
@@ -24,7 +24,7 @@ const App = () => {
 
   const fetchCompetitionData = async () => {
     try {
-      const competitionApiUrl = process.env.REACT_APP_COMPETITION_API_URL || 'http://localhost:8080/api/Competition';
+      const competitionApiUrl = process.env.REACT_APP_COMPETITION_API_URL || 'https://guryongpofs.onrender.com/api/Competition';
       const response = await fetch(competitionApiUrl);
 
       if (!response.ok) {
